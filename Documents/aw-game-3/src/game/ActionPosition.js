@@ -1,16 +1,20 @@
-// Utils
 import Objects from './Objects';
-import keyCodes from '../utils/keys';
-import styles from '../utils/styles';
-
-// Positions
+import keyCodes from '../input/keys';
+import styles from '../input/styles';
 import PausePosition from './PausePosition';
 import TransferPosition from './TransferPosition';
 import LevelUpPosition from './LevelUpPosition';
 
+
 class ActionPosition {
-    constructor(settings, level) { this.settings = settings; this.level = level; this.spaceship = null;
-        this.bullets = []; this.lastBulletTime = null; this.ufos = []; this.bombs = [];
+    constructor(settings, level) { 
+        this.settings = settings; 
+        this.level = level; 
+        this.spaceship = null;
+        this.bullets = []; 
+        this.lastBulletTime = null; 
+        this.ufos = []; 
+        this.bombs = [];
     }
 
     entry(play) {
@@ -31,23 +35,23 @@ class ActionPosition {
         this.ufoImage = new Image();
 
         this.objects = new Objects();
-        this.spaceship = this.objects.spaceship(play.width/2, play.playBoundaries.bottom, this.spaceshipImage);
-
-        // Values that change with levels (1.UFO speed, 2.Bomb falling speed, 3.Bomb dropping frequency)
+        this.spaceship = this.objects.spaceship(
+        play.width/2, play.playBoundaries.bottom,
+        this.spaceshipImage);
         // 1. UFO speed
         this.ufoSpeed = ufoSpeed * (this.level * 7);
         // 2. Bomb falling speed
-        this.bombSpeed = bombSpeed + (this.level * 10);
+        this.bombSpeed = bombSpeed + (this.level * 1);
         // 3. Bomb droping frequency
-        this.bombFrequency = bombFrequency + (this.level * 0.05);
+        this.bombFrequency = bombFrequency + (this.level * 0.08);
 
         // creating ufos
         for(let line = 0; line < ufoLines; line++) {
             for(let column = 0; column < ufoColumns; column++) {
-                const x = (play.width/2) + (column * 50) - ((ufoColumns - 1) * 25);
-                const y = (play.playBoundaries.top + 30) + (line * 30);
+                const x = (play.width/2) + (column * 70) - ((ufoColumns - 1) * 20); 
+                const y = (play.playBoundaries.top + 10) + (line * 60);
                 const ufo = this.objects.ufo(x, y, line, column, this.ufoImage);
-
+ 
                 this.ufos.push(ufo);
             }
         }
@@ -81,7 +85,7 @@ class ActionPosition {
         // Moving bullets
         this.bullets.forEach((bullet, index) => {
             bullet.y -= updateSeconds * bulletSpeed;
-            // if bullet flies out from the canvas, it will be cleared
+            // clear bullets exceededing canvas
             if (bullet.y < 0) {
                 this.bullets.splice(index, 1);
             }
@@ -95,7 +99,8 @@ class ActionPosition {
 
             if (reachRight || reachLeft) {
                 this.turnAround *= -1;
-                this.horizontalMoving = 0;
+                // zig 2 was 0
+                this.horizontalMoving = 2;
                 this.verticalMoving = 1;
                 this.ufosAreSinking = true;
             } else {
@@ -115,8 +120,8 @@ class ActionPosition {
             }
         }
 
-        // Ufos bombing
-        // Sorting ufos - which are at the bottom of each column
+        // bombing
+        // what ufo at column floor
         const frontLineUfos = [];
 
         this.ufos.forEach((ufo) => {
@@ -125,7 +130,7 @@ class ActionPosition {
             }
         });
 
-        // Give a chance for bombing
+        // chance bombing
         for(let i = 0; i < ufoColumns; i ++) {
             const ufo = frontLineUfos[i];
 
@@ -144,13 +149,13 @@ class ActionPosition {
         this.bombs.forEach((bomb, index) => {
             bomb.y += updateSeconds * this.bombSpeed;
 
-            // if a bomb fall out of canvas will be deleted
+            // bomb exceediing canvas deleted
             if (bomb.y > play.height) {
                 this.bombs.splice(index, 1);
             }
         });
 
-        // Ufos bullets collision
+        // Ufos bullet collision
         this.ufos.forEach((ufo, indexUfo) => {
             let collision = false;
 
@@ -160,17 +165,17 @@ class ActionPosition {
                     bullet.x <= (ufo.x + ufo.width / 2) &&
                     bullet.y >= (ufo.y - ufo.height / 2) &&
                     bullet.y <= (ufo.y + ufo.height / 2)) {
-                    // if there is a collision we delete the bullet and set collision true
+                    // no collision set collision true
                     this.bullets.splice(indexBullet, 1);
                     collision = true;
                     play.score += pointsPerUFO;
                 }
             });
 
-            // if there is a collision we delete the UFO
+            // collision ufo deleted
             if (collision) {
                 this.ufos.splice(indexUfo, 1);
-                play.audiodaler.playSound('ufoDeath');
+                play.audio.playAudio('ufoDeath');
             }
         });
 
@@ -180,21 +185,21 @@ class ActionPosition {
             bomb.x -2 <= (this.spaceship.x + this.spaceship.width / 2) &&
             bomb.y + 6 >= (this.spaceship.y - this.spaceship.height / 2) &&
             bomb.y <= (this.spaceship.y + this.spaceship.height / 2)) {
-                // if there is collision we delete the bomb
+                // no collision deletes bomb
                 this.bombs.splice(index, 1);
                 // effect on the spaceship
-                play.audio.playSound('explode');
+                play.audio.playAudio('explode');
                 play.shields--;
             }
         });
 
-        // Spaceship and ufos collision
+        
         this.ufos.forEach((ufo) => {
             if ((ufo.x + ufo.width / 2) >= (this.spaceship.x - this.spaceship.width / 2) &&
                 (ufo.x - ufo.width / 2 ) <= (this.spaceship.x + this.spaceship.width / 2) &&
                 (ufo.y + ufo.height / 2) >= (this.spaceship.y - this.spaceship.height / 2) &&
                 (ufo.y - ufo.height / 2) >= (this.spaceship.y + this.spaceship.height / 2)) {
-                // if there is a collision the spaceship explodes
+                // ship explodes
                 play.audio.playAudio('explode');
                 play.shields--;
             }
@@ -243,31 +248,31 @@ class ActionPosition {
         ctx.fillStyle = '#00ff00';
         this.bombs.forEach((bomb) => ctx.fillRect(bomb.x-2, bomb.y, 4, 6));
 
-        // Draw sound and mute info
+        // Draw audio/mute
         ctx.font = `16px ${styles.font}`;
 
-        ctx.fillStyle = '#424242';
+        ctx.fillStyle = 'red';
         ctx.textAlign = 'left';
-        ctx.fillText('S = sound. Sound:', play.playBoundaries.left, play.playBoundaries.bottom + 70);
+        ctx.fillText('S = audio. Audio:', play.playBoundaries.left, play.playBoundaries.bottom + 70);
 
         const audioStatus = play.audio.muted ? 'OFF' : 'ON';
-        ctx.fillStyle = play.audio.muted ? '#ff0000' : '#0b6121';
+        ctx.fillStyle = play.audio.muted ? '#ff0000' : 'red';
         ctx.fillText(audioStatus, play.playBoundaries.left + 375, play.playBoundaries.bottom + 70);
 
-        ctx.fillStyle = '#424242';
+        ctx.fillStyle = 'red';
         ctx.textAlign = 'right';
         ctx.fillText('Press P to Pause:', play.playBoundaries.right, play.playBoundaries.bottom + 70);
 
         // show level and score
         ctx.textAlign = 'center';
-        ctx.fillStyle = '#bdbdbd';
+        ctx.fillStyle = '#red';
         ctx.font = `bold 24px ${styles.font}`;
-        ctx.fillText('Score', play.playBoundaries.right, play.playBoundaries.top - 75);
+        ctx.fillText('Score', play.playBoundaries.right, play.playBoundaries.top - 95);
         ctx.font = `bold 30px ${styles.font}`;
         ctx.fillText(play.score, play.playBoundaries.right, play.playBoundaries.top - 25);
 
         ctx.font = `bold 24px ${styles.font}`;
-        ctx.fillText('Level', play.playBoundaries.left, play.playBoundaries.top - 75);
+        ctx.fillText('Level', play.playBoundaries.left, play.playBoundaries.top - 95);
         ctx.font = `bold 30px ${styles.font}`;
         ctx.fillText(play.level, play.playBoundaries.left, play.playBoundaries.top - 25);
 
@@ -275,17 +280,17 @@ class ActionPosition {
         ctx.textAlign = 'center';
 
         if (play.shields) {
-            ctx.fillStyle = '#bdbdbd';
-            ctx.font = `bold 24px ${styles.font}`;
-            ctx.fillText('Shields', play.width / 2, play.playBoundaries.top - 75);
-            ctx.font = `bold 30px ${styles.font}`;
-            ctx.fillText(play.shields, play.width / 2, play.playBoundaries.top - 25);
+            ctx.fillStyle = '#red';
+            ctx.font = `bold 22px ${styles.font}`;
+            ctx.fillText('Shields', play.width / 2, play.playBoundaries.top - 95);
+            ctx.font = `bold 25px ${styles.font}`;
+            ctx.fillText(play.shields, play.width / 2, play.playBoundaries.top - 55);
         } else {
             ctx.fillStyle = '#ff4d4d';
             ctx.font = `bold 24px ${styles.font}`;
-            ctx.fillText('WARNING', play.width / 2, play.playBoundaries.top - 75);
-            ctx.fillStyle = '#bdbdbd';
-            ctx.fillText('No shields left!', play.width / 2, play.playBoundaries.top - 25);
+            ctx.fillText('WARNING', play.width / 2, play.playBoundaries.top - 95);
+            ctx.fillStyle = 'red';
+            ctx.fillText('No shields left!', play.width / 2, play.playBoundaries.top - 55);
         }
     }
 
@@ -295,7 +300,7 @@ class ActionPosition {
         if (this.lastBulletTime == null || (currentTime - this.lastBulletTime) > this.settings.bulletMaxFrequency) {
             this.bullets.push(this.objects.bullet(this.spaceship.x, this.spaceship.y - this.spaceship.height/2, this.settings.bulletSpeed));
             this.lastBulletTime = currentTime;
-            play.audio.playSound('shot')
+            play.audio.playAudio('shot')
         }
     }
 }

@@ -1,7 +1,4 @@
-// Utils
-import styles from '../utils/styles';
-
-// Positions
+import styles from '../input/styles';
 import ActionPosition from './ActionPosition';
 
 class TransferPosition {
@@ -32,3 +29,5 @@ class TransferPosition {
 }
 
 export default TransferPosition;
+
+

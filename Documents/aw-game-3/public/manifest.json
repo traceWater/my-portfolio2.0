@@ -1,6 +1,6 @@
 {
-  "short_name": "starwar",
-  "name": "Create React App Sample",
+  "short_name": "starwars",
+  "name": "C",
   "icons": [
     {
       "src": "favicon.ico",

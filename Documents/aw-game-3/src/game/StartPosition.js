@@ -1,6 +1,5 @@
-// Utils
-import keyCodes from '../utils/keys';
-import styles from '../utils/styles';
+import keyCodes from '../input/keys';
+import styles from '../input/styles';
 
 // Positions
 import TransferPosition from './TransferPosition';
@@ -14,7 +13,7 @@ class StartPosition {
         ctx.font = `40px ${styles.font}`;
         ctx.textAlign = 'center';
 
-        const gradient = ctx.createLinearGradient((play.width/2-180), (play.height/2), (play.width/2+180), (play.height/2));
+        const gradient = ctx.createLinearGradient((play.width/2-190), (play.height/2), (play.width/2+190), (play.height/2));
         gradient.addColorStop(0, 'red');
         gradient.addColorStop(0.5, 'red');
         gradient.addColorStop(1.0, 'red');
@@ -28,12 +27,8 @@ class StartPosition {
 
         // Game controls
         ctx.fillStyle = 'red';
-        // ctx.fillText('Game Controls', play.width/2, play.height/2+130);
-        ctx.fillText('P: Pause S: Mutes  < Left Right >  Space: Fire', play.width/2, play.height/2+180);
-        // ctx.fillText('S: Mute', play.width/2, play.height/2+220);
-        // ctx.fillText('⬅: Move Left', play.width/2, play.height/2+260);
-        // ctx.fillText('➡: Move Right', play.width/2, play.height/2+300);
-        // ctx.fillText('Space: Fire', play.width/2, play.height/2+340);
+        ctx.fillText('P: Pause S: Mutes  < Left Right >  Space: Fire', play.width/2, play.height/2+280);
+       
     }
 
     keyDown(play, keyboardCode) {

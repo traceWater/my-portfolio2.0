@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
-
-// Game
 import GameModel from './game/GameModel';
-import Audio from './game/Audio';
-
-// Utils
+import keyCodes from './input/keys';
 import throttle from 'lodash/throttle';
-import keyCodes from './utils/keys';
+// import Audio from './game/Audio';
 
-// Styles
 import './App.css';
 
 const resize = (canvas) => {
@@ -17,7 +12,6 @@ const resize = (canvas) => {
     }
 
     const height = window.innerHeight - 20;
-
     const ratio = canvas.width / canvas.height;
     const width = height * ratio;
 

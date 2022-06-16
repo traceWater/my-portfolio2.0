@@ -2,27 +2,31 @@ const hamburger = document.querySelector("#hamburger")
 const mobileMenu = document.querySelector(".mobilemenu")
 const slideCards = document.querySelectorAll(".card")
 
- const sliderIndicatorParent = document.querySelector("#slideIndicator"),
-    sliderIndicator = sliderIndicatorParent.querySelectorAll("span")
-const form = document.querySelector("form"),
-    email = form.querySelector("#email"),
-    errorTxt = form.querySelector("#errortxt")
-
-
-    //mobile menu
+ const sliderIndicatorParent = document.querySelector(
+     "#slideIndicator"),
+    sliderIndicator = sliderIndicatorParent.querySelectorAll(
+        "span")
+const form = document.querySelector(
+    "form"),
+    email = form.querySelector(
+        "#email"),
+    errorTxt = form.querySelector(
+        "#errortxt")
 hamburger.addEventListener("click", ()=>{
-    mobileMenu.classList.toggle("show")
-    mobileMenu.classList.add("no-scroll")
+    mobileMenu.classList.toggle(
+        "show")
+    mobileMenu.classList.add(
+        "no-scroll")
 
-    if (mobileMenu.classList.contains("show")) {
+    if (mobileMenu.classList.contains(
+        "show")) {
         hamburger.src = "images/icon-close.svg"
     }else{
         hamburger.src = "images/icon-hamburger.svg"
-        mobileMenu.classList.remove("no-scroll")
+        mobileMenu.classList.remove(
+            "no-scroll")
     }
 })
-
-//slider
 
 let slideIndex = 0
 
@@ -37,9 +41,11 @@ const slideTestimonial = () => {
         slideIndex = 0
     }
     slideCards.forEach((slide) => {
-        slide.classList.add("hidden")
+        slide.classList.add(
+            "hidden")
     })
-    slideCards[slideIndex].classList.remove("hidden")
+    slideCards[slideIndex].classList.remove(
+            "hidden")
 
     sliderIndicator.forEach(slider => {
         slider.style.backgroundColor = "white"
@@ -60,8 +66,6 @@ const slideTestimonial = () => {
 }
 setInterval(() => slideTestimonial(), 3000);
 
-//form validation
-
 form.addEventListener("submit", e => {
     e.preventDefault()
 
@@ -71,16 +75,19 @@ form.addEventListener("submit", e => {
 
     function checkEmail() {
         let eValue = email.value
-        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
         if (eValue === "") {
-            email.classList.add("error")
+            email.classList.add(
+                "error")
             errorTxt.textContent = "Please enter your email"
         }else if(!eValue.match(pattern)){
-            email.classList.add("error")
+            email.classList.add(
+                "error")
             errorTxt.textContent = "Please insert a valid email"
         }else {
-            email.classList.remove("error")
+            email.classList.remove(
+                "error")
             errorTxt.textContent = ""
         }
     }

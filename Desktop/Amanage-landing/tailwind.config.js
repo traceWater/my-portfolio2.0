@@ -21,7 +21,7 @@ module.exports = {
       veryLightGray: "hsl(0, 0%, 98%)",
     },
     fontFamily: {
-      vietnam: ["'Be Vietnam Pro', 'sans-serif'"],
+      sansserif: ["san-serif'"],
     },
     extend: {},
   },

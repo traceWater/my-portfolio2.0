@@ -1,0 +1,37 @@
+{
+  "experience": [
+    
+    {
+      "id": 1,
+      "link": "https://www.alphawors.com",
+      "company": "Alphaworks",
+      "title": "Web Developement",
+      "dateFrom": "August 2017",
+      "dateTo": "Current",
+      "info": [
+        "",
+        ""
+      ],
+      "stack": [""],
+      "logowidth": 80,
+      "colourPrimary": "linear-gradient(to bottom, #465a90, #1e3470)",
+      "colourSecondary": "linear-gradient(to bottom, #465a90, #1e3470)"
+    },
+    {
+      "id": 2,
+      "link": "https://www.thelastmileteam.slack.com",
+      "company": "thelastmile",
+      "title": "Software Engineer",
+      "dateFrom": "2017",
+      "dateTo": "Current",
+      "info": [
+        "",
+        "Web design, media engagement."
+      ],
+      "stack": ["React", "Marketing", "Design", "UI/UX"],
+      "logowidth": 80,
+      "colourPrimary": "linear-gradient(to bottom, #39b175, #0be779)",
+      "colourSecondary": "linear-gradient(to bottom, #39b175, #0be779)"
+    }
+  ]
+}

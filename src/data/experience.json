@@ -1,0 +1,37 @@
+{
+  "experience": [
+    
+    {
+      "id": 1,
+      "link": "https://www.bitwiseindustries.slack.com",
+      "company": "Alphaworks",
+      "title": "Software Engineer",
+      "dateFrom": "Feb-2022",
+      "dateTo": "Current",
+      "info": [
+        "Case Studies",
+        "Collaboration."
+      ],
+      "stack": ["React front-end", "Team Version Control"],
+      "logowidth": 100,
+      "colourPrimary": "linear-gradient(to bottom, #797767, #797767)",
+      "colourSecondary": "linear-gradient(to bottom, #797767, #797767)"
+    },
+    {
+      "id": 2,
+      "link": "https://www.thelastmile.slack.com",
+      "company": "thelastmile",
+      "title": "Software Engineer",
+      "dateFrom": "Jan-2017",
+      "dateTo": "Jan-2022",
+      "info": [
+        "Advanced Computer Programming",
+        "Proof-of-concept prototypes"
+      ],
+      "stack": ["React back-end", "Server Side Redering"],
+      "logowidth": 100,
+      "colourPrimary": "linear-gradient(to bottom, #797767, #797767)",
+      "colourSecondary": "linear-gradient(to bottom, #797767, #797767)"
+    }
+  ]
+}

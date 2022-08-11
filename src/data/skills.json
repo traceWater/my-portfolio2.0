@@ -1,0 +1,13 @@
+{
+  "skills": [
+    { "id": 3, "skillName": "Javascript", "amount": "98" },
+    { "id": 5, "skillName": "REST", "amount": "97" },
+    { "id": 1, "skillName": "React.js", "amount": "95" },
+    { "id": 4, "skillName": "Node.js", "amount": "95" },
+    { "id": 2, "skillName": "Expresss", "amount": "93" },
+    { "id": 8, "skillName": "Backend", "amount": "90" },
+    { "id": 7, "skillName": "Grid", "amount": "70" },
+    { "id": 0, "skillName": "Design", "amount": "42" },
+    { "id": 6, "skillName": "Sass", "amount": "40" }
+  ]
+}

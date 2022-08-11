@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 25pt;
+  margin-bottom: 10px;
+}
+
+/* line under contacts */
+.underline {
+  border-top: 4px solid #797767;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 620px;
+}

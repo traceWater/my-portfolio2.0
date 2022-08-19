@@ -19,16 +19,14 @@ const Home = () => {
         <Particles className="particles" params={config.particles} />
         <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
           <Fade bottom distance="80px">
-            <button>
+            <div>
+            <button className='button-1'>
               <a target="_blank" rel='noreferer noopener' href={process.env.PUBLIC_URL + "/resume.pdf"}>
-                down resume
+                My Resume
               </a>
             </button>
-            <button>
-              <a target="_blank" rel='noreferer noopener' href={process.env.PUBLIC_URL + "/one.png"}>
-                My Portfolio
-              </a>
-            </button>
+            </div>
+          
             <img
               className="profile"
               alt=""

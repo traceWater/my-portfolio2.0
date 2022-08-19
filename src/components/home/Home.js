@@ -19,14 +19,13 @@ const Home = () => {
         <Particles className="particles" params={config.particles} />
         <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
           <Fade bottom distance="80px">
-            <div>
+      
             <button className='button-1'>
               <a target="_blank" rel='noreferer noopener' href={process.env.PUBLIC_URL + "/resume.pdf"}>
                 My Resume
               </a>
             </button>
-            </div>
-          
+            {/* home page image option */}
             <img
               className="profile"
               alt=""

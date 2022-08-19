@@ -1,7 +1,11 @@
 @media screen and (min-width: 599px) {
   .profile {
+    /* home image w-h */
     width: 120px;
     height: 120px;
+    margin-top: -18rem;
+    margin-left: -9rem;
+    
   }
 }
 @media screen and (max-width: 599px) {
@@ -42,23 +46,25 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: calc(100vh + 63px);
+  height: calc(100vh + 0.5px);
   z-index: 1000;
 }
 
 .button-1 {
   border: 0;
   border-radius: 0.25rem;
-  background: #1E88E5;
-  color: white;
+  background: transparent;
+  color: rgb(189, 191, 192);
   font-family: -system-ui, sans-serif;
   font-size: 1rem;
-  line-height: 1.2;
-  white-space: nowrap;
+  /* line-height: 1.2; */
+  /* white-space: nowrap; */
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
+  padding-left: -10rem;
+  padding-top: 1.3rem;
+  margin-left: -8.4rem;
   cursor: pointer;
+  position: absolute;
 }
 
 .greeting {
@@ -71,8 +77,8 @@
 .profile {
   border-radius: 10%;
   /* profile picture border color */
-  border: 0.01rem solid #adb6b6;
-  margin-right: 850px;
+  border: 0.01rem solid #acafaf;
+  margin-right: 950px;
 }
 .greeting-text {
   margin: 15px;

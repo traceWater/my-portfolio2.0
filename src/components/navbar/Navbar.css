@@ -5,6 +5,7 @@
   height: 60px;
   display: flex;
   align-items: center;
+  /* navbar headings */
   background-color: #23252a;
   border-bottom: 3px solid #0bc6e7;
   pointer-events: fill;

@@ -1,6 +1,7 @@
 .topButton {
   position: fixed;
-  bottom: 20px;
+  /* arrow at bottom */
+  bottom: 200px;
   right: 30px;
   z-index: 99;
   border: none;

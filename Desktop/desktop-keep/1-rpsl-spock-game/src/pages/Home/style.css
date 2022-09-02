@@ -1,0 +1,67 @@
+.background-image {
+  margin-top: 50px;
+  background-image: url('../../images/bg-pentagon.svg');
+  background-size: 200px 22vh;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.spock-paper {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rules-match{
+  position: relative;
+  top: -70px;
+}
+
+.lizard-rock {
+  position: relative;
+  top: 45px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.scissor-main-screen {
+  position: relative;
+  top: 25px;
+}
+
+@media (min-width: 800px) {
+  .background-image {
+    background-size: 300px 40vh;
+  }
+
+  .link-rules {
+    width: 200px;
+    position: relative;
+    left: 80%;
+    bottom: 50px;
+  }
+
+  .spock-paper {
+    position: relative;
+    bottom: 20px;
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scissor-PentagonContain-screen {
+    position: relative;
+    top: -20px;
+  }
+}

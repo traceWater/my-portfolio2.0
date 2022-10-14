@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 .experience-card-wrapper:hover .experience-card {
-  transform: translateY(-10px);
+  transform: translateY(-40px);
   background-color: #474f63;
 }
 .experience-card-top {

@@ -38,44 +38,25 @@ This is a desktop and mobile version website created for my first portolio. With
   </tr>
 
   <tr>
-    <td valign="top"><img width="1200" alt="Screen Shot 2022-10-04 at 4 57 21 PM" src="https://user-images.githubusercontent.com/100964288/193951626-4a40e5a8-5073-4092-8ace-aab0daf1c018.png" />
+    <td valign="top"><img width="1200" <img width="1434" alt="landing" src="https://user-images.githubusercontent.com/100964288/196820807-6edf8c62-a181-431a-9427-8cea89c6e070.png" />
   </td>
   </tr>
 
   <tr>
-    <td valign="top"><img width="1200" alt="Screen Shot 2022-10-04 at 12 59 48 PM" src="https://user-images.githubusercontent.com/100964288/193937572-87a42149-8883-47b9-8775-23e1e99db243.png" />
+    <td valign="top"><img width="1200"<img width="1425" alt="about" src="https://user-images.githubusercontent.com/100964288/196832631-65214748-7d7b-41b8-acb4-f3fc150dcaa5.png" />
   </td>
   </tr>
-
   
   <tr>
-    <td><b>Mobile</td>
-  </tr>
-
-  <tr>
-    <td valign="top"><img width="400" alt="Screen Shot 2022-10-04 at 12 54 56 PM" src="https://user-images.githubusercontent.com/100964288/193953087-5cfa12f4-6353-4ca2-8ff4-217a7973d117.png" />
+    <td valign="top"><img width="1200" <img width="1427" alt="experience" src="https://user-images.githubusercontent.com/100964288/196821622-04166f37-a001-4179-95c0-10204ec5e2c9.png" />
   </td>
+  </tr>
+  
   <tr>
+    <td valign="top"><img width="1200"<img width="1425" alt="contact" src="https://user-images.githubusercontent.com/100964288/196821645-64c30f67-c113-4fa6-a2b5-a4dbf249ca4c.png" />
+  </td>
+  </tr>
  
-  <tr>
-    <td valign="top"><img width="1200" alt="Screen Shot 2022-10-04 at 4 57 21 PM" src="https://user-images.githubusercontent.com/100964288/193951626-4a40e5a8-5073-4092-8ace-aab0daf1c018.png" />
-  </td>
-  </tr>
-
-  <tr>
-    <td><b>Dashboard</td>
-   </tr>
-
-  <tr>
-      <td valign="top"><img width="1000" alt="Screen Shot 2022-10-04 at 3 05 31 PM" src="https://user-images.githubusercontent.com/100964288/193969827-ab29525c-a4ed-43d8-9869-c04315f57f26.png" />
-  </td>
-  </tr>
-
-  <tr>
-    <td valign="top"><img width="1000" alt="Screen Shot 2022-10-04 at 1 02 08 PM" src="https://user-images.githubusercontent.com/100964288/193970001-e79ee9f7-5076-4ba3-a20d-d2fb08ab54f6.png" />
-  </td>
-  </tr>
-
  </table>
 
 ### Links

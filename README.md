@@ -43,7 +43,7 @@ This is a desktop and mobile version website created for my first portolio. With
   </tr>
 
   <tr>
-    <td valign="top"><img width="1200"<img width="1425" alt="about" src="https://user-images.githubusercontent.com/100964288/196832631-65214748-7d7b-41b8-acb4-f3fc150dcaa5.png" />
+    <td valign="top"><img width="1200" <img width="1425" alt="about" src="https://user-images.githubusercontent.com/100964288/196832631-65214748-7d7b-41b8-acb4-f3fc150dcaa5.png" />
   </td>
   </tr>
   
@@ -53,7 +53,7 @@ This is a desktop and mobile version website created for my first portolio. With
   </tr>
   
   <tr>
-    <td valign="top"><img width="1200"<img width="1425" alt="contact" src="https://user-images.githubusercontent.com/100964288/196821645-64c30f67-c113-4fa6-a2b5-a4dbf249ca4c.png" />
+    <td valign="top"><img width="1200" <img width="1425" alt="contact" src="https://user-images.githubusercontent.com/100964288/196821645-64c30f67-c113-4fa6-a2b5-a4dbf249ca4c.png" />
   </td>
   </tr>
  

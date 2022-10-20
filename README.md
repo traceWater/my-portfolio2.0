@@ -31,7 +31,7 @@
 
 ## Overview
 
-This is a desktop and mobile version website created for my first portolio. Within the website a user can find general information such as my name, contact info, skills and experience.
+This is a desktop website created for my first portolio. Within the website a user can find general information such as my name, contact info, skills and experience.
 
 ### The challenge
 
@@ -75,7 +75,6 @@ This is a desktop and mobile version website created for my first portolio. With
 
 **Frontend**
 
-- Semantic HTML5 markup
 - Module CSS components
 - CSS Flex Box
 - CSS Grid

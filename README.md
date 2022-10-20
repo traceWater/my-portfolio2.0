@@ -12,8 +12,8 @@
   - [Links](#links)
   - [Design](#designs)
   - [Screenshots](#screenshots)
-  - [Our process](#my-process)
-  - [What We Learned](#what-I-learned) 
+  - [My process](#my-process)
+  - [What I Learned](#what-I-learned) 
 
 ## Author
 

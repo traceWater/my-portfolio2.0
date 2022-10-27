@@ -1,8 +1,3 @@
-# [my-portfolio2.0](https://github.com/traceWater/my-portfolio2.0.git/)
-# [mix-dale-dev](https://github.com/traceWater/mix-dale-dev.git/)
-# [mina-project](https://github.com/traceWater/mina-project.git/)
-# [aw-gamne-3](https://github.com/traceWater/aw-game-3.git/)
-# [01-testing](https://github.com/traceWater/01-testing.git/)
 
 
 ## Table of contents

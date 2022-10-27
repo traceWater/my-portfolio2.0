@@ -21,7 +21,7 @@
 - **Dale Cottrell - Software Engineer**
 
   [my-portfolio2.0](https://github.com/traceWater/my-portfolio2.0.git/)
-  [mix-dale-dev](https://github.com/traceWater/mix-dale-dev.git/)
+  [mixcellence](https://github.com/OxanaSF/mixellence)
   [mina-project](https://github.com/traceWater/mina-project.git/)
   [aw-game-3](https://github.com/traceWater/aw-game-3.git/)
   [01-testing](https://github.com/traceWater/01-testing.git/)

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/traceWater/bw-project-1/precache-manifest.99902a45b74a0aec7bda2b30bf95e94a.js"
+  "/aw-game-3/precache-manifest.354f5a4ee832e78fdc891e213cf0579c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/traceWater/bw-project-1/index.html", {
+workbox.routing.registerNavigationRoute("/aw-game-3/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

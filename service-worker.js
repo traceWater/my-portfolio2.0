@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/my-portfolio2.0/precache-manifest.6ec8046c330f5e39beaa76d59cc05a7b.js"
+  "/traceWater/bw-project-1/precache-manifest.99902a45b74a0aec7bda2b30bf95e94a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/my-portfolio2.0/index.html", {
+workbox.routing.registerNavigationRoute("/traceWater/bw-project-1/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

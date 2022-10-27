@@ -15,11 +15,11 @@
 
 - **Dale Cottrell - Software Engineer**
 
-  [my-portfolio2.0](https://github.com/traceWater/my-portfolio2.0.git/)
-  [mixcellence](https://github.com/OxanaSF/mixellence)
-  [mina-project](https://github.com/traceWater/mina-project.git/)
-  [aw-game-3](https://github.com/traceWater/aw-game-3.git/)
-  [01-testing](https://github.com/traceWater/01-testing.git/)
+  - [my-portfolio2.0](https://github.com/traceWater/my-portfolio2.0.git/)
+  - [mixcellence](https://github.com/OxanaSF/mixellence)
+  - [mina-project](https://github.com/traceWater/mina-project.git/)
+  - [aw-game-3](https://github.com/traceWater/aw-game-3.git/)
+  - [01-testing](https://github.com/traceWater/01-testing.git/)
 
   - [LinkedIn](https://www.linkedin.com/in/dale-cottrell-82b900246/)
   

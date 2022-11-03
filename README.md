@@ -78,7 +78,7 @@ This is a desktop website created for my first portolio. Within the website a us
 - [React Reveal](https://www.react-reveal.com/)
 - [tsparticles](https://particles.js.org/)
 - [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
-- [Netlify](https://www.netlify.com/)
+- [render](https://www.render.com/)
 - [typewriter-effect](https://www.npmjs.com/package/typewriter-effect)
 
 

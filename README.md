@@ -18,9 +18,8 @@
   - [my-portfolio2.0](https://github.com/traceWater/my-portfolio2.0.git/)
   - [mixcellence](https://mixellence.netlify.app/)
   - [mina-project](https://github.com/traceWater/mina-project.git/)
-  - [aw-game-3](https://github.com/traceWater/aw-game-3.git/)
+  - [aw-game-3](https://github.com/traceWater/aw-game-5.git/)
   - [01-testing](https://github.com/traceWater/01-testing.git/)
-
   - [LinkedIn](https://www.linkedin.com/in/dale-cottrell-82b900246/)
   
 
@@ -40,22 +39,22 @@ This is a desktop website created for my first portolio. Within the website a us
   </tr>
 
   <tr>
-    <td valign="top"><img width="1200" <img width="1434" alt="landing" src="https://user-images.githubusercontent.com/100964288/196820807-6edf8c62-a181-431a-9427-8cea89c6e070.png" />
+    <td valign="top"><img width="1434" alt="landing" src="https://user-images.githubusercontent.com/100964288/196820807-6edf8c62-a181-431a-9427-8cea89c6e070.png" />
   </td>
   </tr>
 
   <tr>
-    <td valign="top"><img width="1200" <img width="1425" alt="about" src="https://user-images.githubusercontent.com/100964288/196832631-65214748-7d7b-41b8-acb4-f3fc150dcaa5.png" />
+    <td valign="top"><img width="1425" alt="about" src="https://user-images.githubusercontent.com/100964288/196832631-65214748-7d7b-41b8-acb4-f3fc150dcaa5.png" />
   </td>
   </tr>
   
   <tr>
-    <td valign="top"><img width="1200" <img width="1427" alt="experience" src="https://user-images.githubusercontent.com/100964288/196821622-04166f37-a001-4179-95c0-10204ec5e2c9.png" />
+    <td valign="top"><img width="1427" alt="experience" src="https://user-images.githubusercontent.com/100964288/196821622-04166f37-a001-4179-95c0-10204ec5e2c9.png" />
   </td>
   </tr>
   
   <tr>
-    <td valign="top"><img width="1200" <img width="1425" alt="contact" src="https://user-images.githubusercontent.com/100964288/196821645-64c30f67-c113-4fa6-a2b5-a4dbf249ca4c.png" />
+    <td valign="top"><img width="1425" alt="contact" src="https://user-images.githubusercontent.com/100964288/196821645-64c30f67-c113-4fa6-a2b5-a4dbf249ca4c.png" />
   </td>
   </tr>
  
